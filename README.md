@@ -2,7 +2,7 @@
   Animal Hunting
 </h1>
 
-[![logo](https://imgur.com/a/Th6K4QS)](https://imgur.com/a/Th6K4QS)
+![logo](https://i.imgur.com/QBf3xWS.jpeg)
 
 <p>
   Jump into the wilderness of San Andreas and make some money hunting for animals! Aniamls of any model can be added using just the model name, which can be found <a href="https://docs.fivem.net/docs/game-references/ped-models/#animals" target="_blank">here</a>. This script allows for players to hunt certain animals
