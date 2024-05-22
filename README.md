@@ -20,5 +20,5 @@
   Requirements
 </h2>
 <ul>
-  <li>ESX <b>Optional</b> - Script does allow for ESX to be enable; however, it is not required. Script has the ability in the config file to add how you would like the player to be paid</li>
+  <li>ESX <b>(Optional)</b> - Script does allow for ESX to be enable; however, it is not required. Script has the ability in the config file to add how you would like the player to be paid</li>
 </ul>
