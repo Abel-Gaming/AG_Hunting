@@ -1,3 +1,7 @@
+if Config.Framework == 'ESX' then
+    ESX = exports["es_extended"]:getSharedObject()
+end
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
@@ -26,7 +30,11 @@ Citizen.CreateThread(function()
                                 Citizen.Wait(2000)
                                 DeleteEntity(closestPed)
 								InfoMessage('Animal skin is worth ~g~$' .. v.Worth)
-								AddMoneyCode(v.Worth)
+                                if Config.Framework == 'ESX' then
+                                    TriggerServerEvent('AG_Hunting:SellSkin', k)
+                                else
+                                    AddMoneyCode(v.Worth)
+                                end
                                 break
                             end
                         end
