@@ -13,9 +13,9 @@ if Config.Framework == 'ESX' then
 	    local xPlayer = ESX.GetPlayerFromId(source)
 
 	    if animal_prices[animal] then
-		    xPlayer.addMoney(item_prices[item]) -- Adds the money
+		    xPlayer.addMoney(animal_prices[animal]) -- Adds the money
         else
-		    xPlayer.showNotification("~r~[ERROR]~w~ The item doesn't seem to exist in the config", false, true, 90) -- Shows notification
+		    xPlayer.showNotification("~r~[ERROR]~s~ The item doesn't seem to exist in the config", false, true, 90) -- Shows notification
 	    end
     end)
 end
