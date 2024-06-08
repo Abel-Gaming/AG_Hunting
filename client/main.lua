@@ -29,7 +29,7 @@ Citizen.CreateThread(function()
                                 TaskPlayAnim(playerPed, "random@domestic", "pickup_low", 8.0, -8, 2000, 2, 0, 0, 0, 0)
                                 Citizen.Wait(2000)
                                 DeleteEntity(closestPed)
-								InfoMessage('Animal skin is worth ~g~$' .. v.Worth)
+				InfoMessage('Animal skin is worth ~g~$' .. v.Worth)
                                 if Config.Framework == 'ESX' then
                                     TriggerServerEvent('AG_Hunting:SellSkin', k)
                                 else
