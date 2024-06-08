@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
             local closestModel = GetEntityModel(closestPed)
 
             for k,v in pairs(Config.Animals) do
-				local modelCheck = GetHashKey(k)
+		local modelCheck = GetHashKey(k)
                 if modelCheck == closestModel then
                     while #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(closestPed)) <= 1.5 do
                         Citizen.Wait(0)
