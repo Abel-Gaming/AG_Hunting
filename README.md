@@ -20,5 +20,6 @@
   Requirements
 </h2>
 <ul>
+  <li>Ox Lib <b>(Required)</b> - Script requires Ox Lib that can be downloaded <a href="https://github.com/overextended/ox_lib/releases" target="_blank">here</a></li>
   <li>ESX <b>(Optional)</b> - Script does allow for ESX to be enable; however, it is not required. Script has the ability in the config file to add how you would like the player to be paid</li>
 </ul>
