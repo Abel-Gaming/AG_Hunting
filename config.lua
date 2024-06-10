@@ -21,6 +21,6 @@ Config.Animals = {
 }
 
 function AddMoneyCode(amount)
-    -- Add your code to add money here
+    -- Add your client side code to add money here
     print('Added $' .. amount)
 end

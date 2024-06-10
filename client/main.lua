@@ -7,13 +7,13 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
         local playerPed = PlayerPedId()
         local radius = 3.0
-        local closestPed, distance = getClosestPed(playerPed, radius)
+        local closestPed = lib.getClosestPed(GetEntityCoords(PlayerPedId()), radius)
 
-        if closestPed and distance <= radius then
+        if closestPed then
             local closestModel = GetEntityModel(closestPed)
 
             for k,v in pairs(Config.Animals) do
-		local modelCheck = GetHashKey(k)
+				local modelCheck = GetHashKey(k)
                 if modelCheck == closestModel then
                     while #(GetEntityCoords(PlayerPedId()) - GetEntityCoords(closestPed)) <= 1.5 do
                         Citizen.Wait(0)
@@ -29,7 +29,7 @@ Citizen.CreateThread(function()
                                 TaskPlayAnim(playerPed, "random@domestic", "pickup_low", 8.0, -8, 2000, 2, 0, 0, 0, 0)
                                 Citizen.Wait(2000)
                                 DeleteEntity(closestPed)
-				InfoMessage('Animal skin is worth ~g~$' .. v.Worth)
+								InfoMessage('Animal skin is worth ~g~$' .. v.Worth)
                                 if Config.Framework == 'ESX' then
                                     TriggerServerEvent('AG_Hunting:SellSkin', k)
                                 else
